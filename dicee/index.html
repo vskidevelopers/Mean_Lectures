@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dicee</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</head>
+<body>
+<div class="container">
+    <div class="jumbotron">
+        <div class="header_div" id="title">
+            <h1 class="text-center">Welcome to Dicee!</h1>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-6 border border-dark">
+                <div class="player_name ">
+                    <h1 class="text-center" id="player_name">Player Name <hr></h1>
+                </div>
+                <br>
+                <div class="dice_box">
+                    <h1 class="text-center">Dice No  <span id="player_dice_no">0</span></h1>
+                </div>
+            </div>
+            <div class="col-6 border border-dark">
+                <div class="player_name">
+                    <h1 class="text-center">Comp<hr></h1>
+                </div>
+                <br>
+                <div class="dice_box">
+                    <h1 class="text-center">Dice No  <span id="comp_dice_no">0</span></h1>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="play_btn row">
+        <div class="col-12 text-center my-3">
+            <button id="startgameBtn" onclick="startGame()" class=" mx-auto btn btn-success btn-lg text-center" href="#" role="button"> New Game </button>
+            <button id="endgameBtn" onclick="endGame()" class=" hidden mx-auto btn btn-danger btn-lg text-center" href="#" role="button"> End Game </button>
+            <button id="rolldiceBtn" onclick="Play()" class="hidden mx-auto btn btn-warning btn-lg text-center" href="#" role="button"> Roll Dice </button>
+        </div>
+    </div>
+</div>
+
+<script src="scripts.js"></script>
+</body>
+</html>
